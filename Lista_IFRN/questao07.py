@@ -1,7 +1,14 @@
 #7. Entrar com o dia e o mês de uma data e informar quantos dias se passaram desde o início do ano. Esqueça a questão dos anos bissextos e considere sempre que um mês possui 30 dias.
 
+dia = int(input("Digite o dia: "))
+mes = int(input("Digite o mês: "))
 
-mes = 30
+
+dias_passados = (mes - 1) * 30 + dia
+
+print("Desde o início do ano, já se passaram {} dias.".format(dias_passados))
+
+'''
 
 dia = int(input('Informe o dia: '))
 mes_entrada = int(input('Informe o mes: '))
@@ -41,3 +48,4 @@ if mes_entrada == 11:
 
 if mes_entrada == 12:
     print('Se passaram {} dias desde o início do ano.'.format(330+dia))
+'''
